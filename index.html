@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Lloyd Ashman's data portfolio, featuring SQL, SSIS, Power BI, SSRS, business intelligence, reporting, and workflow automation.">
+  <meta name="theme-color" content="#0f172a">
+  
+  <!-- SEO -->
+  <title>Lloyd Ashman | Data, Business Intelligence & Automation Expert</title>
+  <meta property="og:title" content="Lloyd Ashman | Data, Business Intelligence & Automation Expert">
+  <meta property="og:description" content="Explore Lloyd Ashman's data portfolio, featuring SQL, SSIS, Power BI, SSRS, business intelligence, reporting, and workflow automation.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Crect fill='%230f172a' width='1200' height='630'/%3E%3Crect x='100' y='100' width='1000' height='430' fill='none' stroke='%2300d4ff' stroke-width='2'/%3E%3Ctext x='600' y='200' font-family='sans-serif' font-weight='bold' fill='%23ffffff' font-size='48' text-anchor='middle'%3ELloyd Ashman%3C/text%3E%3Ctext x='600' y='250' font-family='sans-serif' fill='%2300d4ff' font-size='28' text-anchor='middle'%3EData, BI %26 Automation%3C/text%3E%3Ctext x='600' y='310' font-family='sans-serif' fill='%2388a8c4' font-size='16' text-anchor='middle'%3ESQL • SSIS • Power BI • SSRS • Power Automate%3C/text%3E%3C/svg%3E">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%230f172a' width='100' height='100'/%3E%3Ctext x='50' y='65' font-family='serif' font-weight='bold' fill='%2300d4ff' font-size='60' text-anchor='middle'%3ELA%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">
+        <a href="#" class="brand-link" onclick="scrollToSection('home'); return false;">
+          <span class="brand-monogram">LA</span>
+          <span class="brand-text">Lloyd Ashman</span>
+        </a>
+      </div>
+      
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" onclick="scrollToSection('about'); return false;">About</a></li>
+        <li><a href="#skills" onclick="scrollToSection('skills'); return false;">Skills</a></li>
+        <li><a href="#projects" onclick="scrollToSection('projects'); return false;">Projects</a></li>
+        <li><a href="#approach" onclick="scrollToSection('approach'); return false;">Approach</a></li>
+        <li><a href="#contact" onclick="scrollToSection('contact'); return false;">Contact</a></li>
+        <li class="nav-cta"><a href="#contact" class="btn btn-primary" onclick="scrollToSection('contact'); return false;">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-eyebrow">DATA • BUSINESS INTELLIGENCE • AUTOMATION</p>
+          <h1 class="hero-title">Turning data into insight and action.</h1>
+          <p class="hero-description">
+            I'm Lloyd Ashman, a data professional working across SQL, data integration, business intelligence, reporting, and automation. I focus on building practical solutions that help make data more useful, accessible, and actionable.
+          </p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary" onclick="scrollToSection('projects'); return false;">Explore My Projects</a>
+            <a href="#contact" class="btn btn-secondary" onclick="scrollToSection('contact'); return false;">Get in Touch</a>
+          </div>
+          <div class="skills-strip">
+            <span class="skill-badge">SQL</span>
+            <span class="skill-badge">SSIS</span>
+            <span class="skill-badge">Power BI</span>
+            <span class="skill-badge">SSRS</span>
+            <span class="skill-badge">Power Automate</span>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <svg class="dashboard-visual" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <style>
+                .dash-bg { fill: #0f172a; stroke: #00d4ff; }
+                .dash-card { fill: none; stroke: #00d4ff; stroke-width: 1.5; }
+                .dash-text { font-family: 'Monaco', 'Courier New', monospace; font-size: 11px; }
+                .dash-label { fill: #88a8c4; }
+                .dash-value { fill: #ffffff; font-weight: bold; }
+                .dash-accent { fill: #00d4ff; }
+              </style>
+            </defs>
+            <rect width="400" height="400" class="dash-bg" stroke-width="2"/>
+            <text x="20" y="35" class="dash-text dash-label">Dashboard: Sample Metrics</text>
+            <line x1="20" y1="42" x2="380" y2="42" stroke="#00d4ff" stroke-width="1"/>
+            
+            <!-- KPI Cards -->
+            <rect x="20" y="60" width="170" height="85" class="dash-card"/>
+            <text x="30" y="85" class="dash-text dash-label">Total Records</text>
+            <text x="30" y="110" class="dash-text dash-value" font-size="24">2.4M</text>
+            <text x="30" y="130" class="dash-text dash-accent" font-size="10">↑ 15% from previous</text>
+            
+            <rect x="210" y="60" width="170" height="85" class="dash-card"/>
+            <text x="220" y="85" class="dash-text dash-label">Processing</text>
+            <text x="220" y="110" class="dash-text dash-value" font-size="24">847K</text>
+            <text x="220" y="130" class="dash-text dash-accent" font-size="10">↑ 12% this month</text>
+            
+            <!-- Chart area -->
+            <rect x="20" y="160" width="360" height="120" class="dash-card"/>
+            <text x="30" y="180" class="dash-text dash-label">Trend Analysis</text>
+            <polyline points="30,240 80,220 130,235 180,200 230,210 250,190 280,195 320,170 360,185" 
+                      fill="none" stroke="#00d4ff" stroke-width="2" stroke-linejoin="round"/>
+            <circle cx="30" cy="240" r="3" class="dash-accent"/>
+            <circle cx="360" cy="185" r="3" class="dash-accent"/>
+            
+            <!-- Footer -->
+            <text x="30" y="300" class="dash-text dash-label" font-size="9">Data Model: Optimized | Updated: Today</text>
+            <text x="30" y="320" class="dash-text dash-label" font-size="9">SQL Server • Data Warehouse • Real-time Query</text>
+            
+            <!-- Decorative elements -->
+            <g opacity="0.3">
+              <circle cx="350" cy="350" r="30" fill="none" stroke="#00d4ff" stroke-width="1"/>
+              <circle cx="350" cy="350" r="20" fill="none" stroke="#00d4ff" stroke-width="1"/>
+              <circle cx="350" cy="350" r="10" fill="none" stroke="#00d4ff" stroke-width="1"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2>About</h2>
+      <div class="about-content">
+        <p class="about-text">
+          I enjoy working with data across the full journey, from extracting and transforming information to building reports, dashboards, and automated processes that help people make informed decisions.
+        </p>
+        <div class="tech-explanation">
+          <h3>How These Technologies Work Together</h3>
+          <div class="tech-flow">
+            <div class="flow-step">
+              <div class="flow-icon">📊</div>
+              <h4>SQL</h4>
+              <p>The foundation: querying, transforming, and preparing data from any source.</p>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <div class="flow-icon">🔗</div>
+              <h4>SSIS</h4>
+              <p>The pipeline: integrating data from multiple sources and automating the flow.</p>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <div class="flow-icon">📈</div>
+              <h4>Power BI</h4>
+              <p>The visualization: building interactive dashboards and analytical models.</p>
+            </div>
+          </div>
+          <div class="tech-flow" style="margin-top: 20px;">
+            <div class="flow-step">
+              <div class="flow-icon">📋</div>
+              <h4>SSRS</h4>
+              <p>Structured reporting: creating parameterized, operational reports.</p>
+            </div>
+            <div class="flow-arrow">+</div>
+            <div class="flow-step">
+              <div class="flow-icon">⚙️</div>
+              <h4>Power Automate</h4>
+              <p>Automation layer: connecting systems and automating repetitive processes.</p>
+            </div>
+            <div class="flow-arrow">=</div>
+            <div class="flow-step" style="background: rgba(0, 212, 255, 0.1); border-color: #00d4ff;">
+              <div class="flow-icon">✨</div>
+              <h4>Complete Solution</h4>
+              <p>End-to-end data ecosystem driving business decisions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <p class="section-subtitle">Specialized in Microsoft data platform technologies, building complete data solutions from source to insight.</p>
+      
+      <div class="skills-grid">
+        <div class="skill-card" id="skill-card-sql">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="1"></circle>
+                <path d="M12 1v6m8.66-1.34l-4.24 4.24M23 12h-6m1.34 8.66l-4.24-4.24M12 23v-6m-8.66 1.34l4.24-4.24M1 12h6M2.34 2.34l4.24 4.24"></path>
+              </svg>
+            </div>
+            <h3>SQL</h3>
+          </div>
+          <ul class="skill-list">
+            <li>Querying and data manipulation</li>
+            <li>Joins, aggregations, and data transformation</li>
+            <li>Data quality and validation</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" id="skill-card-ssis">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                <polyline points="13 2 13 9 20 9"></polyline>
+                <path d="M9 13h4"></path>
+                <path d="M9 17h4"></path>
+              </svg>
+            </div>
+            <h3>SSIS</h3>
+          </div>
+          <ul class="skill-list">
+            <li>ETL and data integration</li>
+            <li>Data movement and transformation</li>
+            <li>Workflow design</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" id="skill-card-power-bi">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+            </div>
+            <h3>Power BI</h3>
+          </div>
+          <ul class="skill-list">
+            <li>Interactive dashboards</li>
+            <li>Data modelling and visualisation</li>
+            <li>KPI reporting and analysis</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" id="skill-card-ssrs">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <path d="M12 18v-6"></path>
+              </svg>
+            </div>
+            <h3>SSRS</h3>
+          </div>
+          <ul class="skill-list">
+            <li>Structured and parameterised reports</li>
+            <li>Operational reporting</li>
+            <li>Report presentation and maintenance</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" id="skill-card-power-automate">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="1"></circle>
+                <path d="M12 1v6m0 6v6"></path>
+                <path d="M4.22 4.22l4.24 4.24m5.08 5.08l4.24 4.24"></path>
+                <path d="M1 12h6m6 0h6"></path>
+                <path d="M4.22 19.78l4.24-4.24m5.08-5.08l4.24-4.24"></path>
+              </svg>
+            </div>
+            <h3>Power Automate</h3>
+          </div>
+          <ul class="skill-list">
+            <li>Workflow automation</li>
+            <li>Notifications and approval processes</li>
+            <li>Integration between supported services</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <p class="section-subtitle">Illustrative demonstrations of technical capabilities and data solutions.</p>
+      
+      <!-- Project Filter -->
+      <div class="project-filter">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="Power BI">Power BI</button>
+        <button class="filter-btn" data-filter="SQL">SQL</button>
+        <button class="filter-btn" data-filter="SSIS">SSIS</button>
+        <button class="filter-btn" data-filter="SSRS">SSRS</button>
+        <button class="filter-btn" data-filter="Power Automate">Power Automate</button>
+      </div>
+      
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Projects will be inserted here by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Detail Modal -->
+  <div class="modal" id="projectModal">
+    <div class="modal-content" id="modalContent">
+      <!-- Content will be inserted by JavaScript -->
+    </div>
+    <button class="modal-close" id="modalClose" aria-label="Close project details">×</button>
+  </div>
+
+  <!-- Approach Section -->
+  <section id="approach" class="section approach">
+    <div class="container">
+      <h2>How I Approach Data Problems</h2>
+      <p class="section-subtitle">A systematic methodology for turning requirements into effective data solutions.</p>
+      
+      <div class="workflow-container">
+        <div class="workflow-step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Understand</h3>
+            <p>Identify the business question and requirements. What decision needs to be made? What information is needed?</p>
+          </div>
+        </div>
+        
+        <div class="workflow-step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Explore</h3>
+            <p>Understand the data sources, structures, and quality. Map the data landscape and identify dependencies.</p>
+          </div>
+        </div>
+        
+        <div class="workflow-step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Transform</h3>
+            <p>Prepare, integrate, and validate the data. Apply business logic and ensure accuracy and consistency.</p>
+          </div>
+        </div>
+        
+        <div class="workflow-step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Deliver</h3>
+            <p>Build reports, dashboards, or automated workflows. Present information in a clear, actionable format.</p>
+          </div>
+        </div>
+        
+        <div class="workflow-step">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <h3>Improve</h3>
+            <p>Review accuracy, usability, and maintainability. Look for opportunities to enhance performance and insights.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="contact-content">
+        <h2>Have a data challenge in mind?</h2>
+        <p class="contact-description">
+          I'm always interested in thoughtful data solutions, business intelligence, reporting, and automation. Get in touch to connect or discuss a potential opportunity.
+        </p>
+        
+        <div class="contact-actions">
+          <a href="mailto:lloyd@example.com" class="contact-link" id="contactEmail">
+            <span class="contact-icon">✉️</span>
+            <span>Send me an email</span>
+          </a>
+          <a href="https://linkedin.com/in/lloyd-ashman" target="_blank" rel="noopener noreferrer" class="contact-link" id="contactLinkedIn">
+            <span class="contact-icon">💼</span>
+            <span>Connect on LinkedIn</span>
+          </a>
+          <a href="https://github.com/lloyd-ashman" target="_blank" rel="noopener noreferrer" class="contact-link" id="contactGitHub">
+            <span class="contact-icon">🔗</span>
+            <span>View on GitHub</span>
+          </a>
+        </div>
+        
+        <p class="contact-note">
+          Note: Placeholder contact information shown above. Update these links in <code>config.js</code> with your real details.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Lloyd Ashman</h4>
+          <p>Data, Business Intelligence & Automation</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about" onclick="scrollToSection('about'); return false;">About</a></li>
+            <li><a href="#skills" onclick="scrollToSection('skills'); return false;">Skills</a></li>
+            <li><a href="#projects" onclick="scrollToSection('projects'); return false;">Projects</a></li>
+            <li><a href="#approach" onclick="scrollToSection('approach'); return false;">Approach</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:lloyd@example.com" id="footerEmail">Email</a></li>
+            <li><a href="https://linkedin.com/in/lloyd-ashman" target="_blank" rel="noopener noreferrer" id="footerLinkedIn">LinkedIn</a></li>
+            <li><a href="https://github.com/lloyd-ashman" target="_blank" rel="noopener noreferrer" id="footerGitHub">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Lloyd Ashman. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script src="skills.js"></script>
+  <script src="projects.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

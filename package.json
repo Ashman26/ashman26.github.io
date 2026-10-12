@@ -1,0 +1,13 @@
+{
+  "name": "lloyd-ashman-portfolio",
+  "version": "1.0.0",
+  "description": "Professional data portfolio for Lloyd Ashman - Data, Business Intelligence & Automation",
+  "main": "index.html",
+  "scripts": {
+    "serve": "npx http-server",
+    "build": "echo 'Static site - no build step required'"
+  },
+  "keywords": ["portfolio", "data", "business-intelligence", "SQL", "Power-BI", "SSIS"],
+  "author": "Lloyd Ashman",
+  "license": "MIT"
+}
